@@ -6,7 +6,23 @@
 // 제한 조건
 // n은 1이상 8000000000 이하인 자연수입니다.
 
+//내풀이
+function solution(n) {
+    const arr = n
+        .toString()
+        .split("")
+        .sort((a, b) => b - a)
+        .join("");
+    const answer = parseInt(arr);
+    return answer;
+}
+
+//다른사람 풀이
 function solution(n) {
     let nString = n.toString().split("").map(Number);
     return parseInt(nString.sort((a, b) => b - a).join(""));
+}
+
+function solution(n) {
+    return parseInt((n + "").split("").sort().reverse().join(""));
 }
