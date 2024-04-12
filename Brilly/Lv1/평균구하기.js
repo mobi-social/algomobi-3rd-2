@@ -7,11 +7,19 @@ arr은 길이 1 이상, 100 이하인 배열입니다.
 arr의 원소는 -10,000 이상 10,000 이하인 정수입니다.
 */
 
+// 프로그래머스 제출
+function solution(arr) {
+  const sum = arr.reduce((acc, cur) => acc + cur, 0);
+  const average = sum / arr.length;
+  return average;
+}
+
+// 풀이
 const j_solution = () => {
-  const arr = [1, 2, 3, 4];
-  const answer = arr.reduce((acc, cur, idx) => {
-    return (acc += cur);
-  }, 0);
-  console.log(answer / 2);
+  const arr = [1, 2, 3, 4, 5];
+  const sum = arr.reduce((acc, cur) => acc + cur, 0);
+  const average = sum / arr.length;
+  console.log(average);
+  return average;
 };
 j_solution();
