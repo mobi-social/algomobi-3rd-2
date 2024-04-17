@@ -16,3 +16,12 @@
 function solution(s) {
     return s.toLowerCase().split("p").length === s.toLowerCase().split("y");
 }
+//===>근데 이거 리턴값이 모두 false 라서 안됨
+
+///p/gi => 'p'의 대소문자를 무시하는 정규식 표현
+//5점
+function solution(s) {
+    const pCount = (s.match(/p/gi) || []).length;
+    const yCount = (s.match(/y/gi) || []).length;
+    return pCount === yCount;
+}
