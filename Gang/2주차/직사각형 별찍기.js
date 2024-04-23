@@ -20,3 +20,4 @@ const solution = (a, b) => {
 };
 
 console.log(solution(5, 3));
+//5 3
