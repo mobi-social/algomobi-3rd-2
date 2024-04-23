@@ -21,4 +21,4 @@ const solution = (s, n) => {
         .join("");
 };
 
-console.log(solution("AB", 1));
+console.log(solution("A B", 3));

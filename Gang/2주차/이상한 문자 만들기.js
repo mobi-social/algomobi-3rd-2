@@ -24,7 +24,7 @@ const solution = (s) => {
 };
 
 const solution1 = (s) => {
-    const stemp = s.match(/(\s+|\S+)/g).map((part) => {
+    const stemp = s.match(/(s+|S+)/g).map((part) => {
         // 공백 문자열과 비공백 문자열을 매치한다
         if (/\s/.test(part)) {
             // part가 공백 문자열인지 검사한다
@@ -37,7 +37,7 @@ const solution1 = (s) => {
     return stemp.join("");
 };
 
-console.log(solution1(" try hello world "));
+console.log(solution1("try hello world"));
 
 // return s.split(" ").reduce((acc, word) => {
 //     const temp = word.split("").reduce((r, c, i) => {
