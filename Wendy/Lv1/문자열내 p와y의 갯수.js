@@ -14,9 +14,8 @@
 //사실 기억이나버려서 풀음..
 
 function solution(s) {
-    return s.toLowerCase().split("p").length === s.toLowerCase().split("y");
+    return s.toLowerCase().split("p").length === s.toLowerCase().split("y").length;
 }
-//===>근데 이거 리턴값이 모두 false 라서 안됨
 
 ///p/gi => 'p'의 대소문자를 무시하는 정규식 표현
 //5점
