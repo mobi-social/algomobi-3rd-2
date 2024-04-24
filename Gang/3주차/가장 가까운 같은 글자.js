@@ -24,7 +24,7 @@ const solution = (s) => {
                 acc.output.push(i - acc.last[char]);
             } else {
                 acc.output.push(-1);
-            }
+            } 
             acc.last[char] = i;
             return acc;
         },
